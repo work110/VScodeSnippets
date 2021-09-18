@@ -30,10 +30,10 @@
             "<html>\r",
             "    <head>\r",
             "        <meta charset=\"utf-8\">\r",
-            "        <title>【标题】</title>\r",
-            "        <script type=\"text/javascript\" src=\"【JS外链】jquery.js\"></script>\r",
+            "        <title>【这里是网页标题】</title>\r",
+            "        <script type=\"text/javascript\" src=\"【这里是JS外链】jquery.js\"></script>\r",
             "        <link type=“text/css” href=“【CSS外链】001.css”>\r",
-            "        <!--【行内样式写在head中】-->\r",
+            "        <!--【页内css】-->\r",
             "            <style>\r",
             "                /* 全局通配选择器 */\r",
             "                * {padding: 0px;}\r",
@@ -43,15 +43,15 @@
             "                #123 {color: blue;}\r",
             "                /* 类选择器，用于选择类class */\r",
             "                .abc {color: yellow;}\r",
-            "                /* 后代选择器 选择div中的p */\r",
-            "                div>p {color: gray;}\r",
-            "                /* 相邻选择器 选择p和div链接在一起的 */\r",
-            "                p+div {font-weight: bold;}\r",
             "            </style>\r",
             "    </head>\r",
             "\r",
             "    <body>\r",
-            "        正文\r",
+            "        <h1>秋思</h1>\r",
+            "        <hr/>\r",
+            "        <p>又逢一年秋意凉，遥想春夏思故乡。也念旧人今何在，饮酒独酌忆昔阳。</p>\r",
+            "        <p>日落渐早催路紧，东风习吹白露霜。目途虽远步履勤，手握鞭缰不曾放。</p>\r",
+            "        <p>桃源难行吾意坚，梁园道阻心愿往。不信苦寒困天地，乾坤繁华乃为纲！</p>\r",
             "    </body>\r",
             "</html>"
         ]
@@ -81,6 +81,46 @@
             "     </select>\r",
             "     <input type=\"submit\" name=\"button\" value=\"确定\">\r",
             " </form>"
+        ]
+    },
+    "【元素】水平线": {
+        "prefix": "e-shuipingxian-spx-hr",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<hr width=\"100%\" size=\"3px\" color=\"blue\">"
+        ]
+    },
+    "【元素】HTML加粗": {
+        "prefix": "e-jiacu-strong",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<strong>加粗$1</strong>"
+        ]
+    },
+    "【元素】HTML加斜": {
+        "prefix": "e-jiaxie-em",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<em>加斜$1</em>"
+        ]
+    },
+    "【元素】HTML下划线": {
+        "prefix": "e-xiahuaxian-xhx-ins",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<ins>下划线$1</ins>"
+        ]
+    },
+    "【元素】HTML字体": {
+        "prefix": "e-ziti-zt-font",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<font size=\"3\" face=\"微软雅黑\" color=\"red\" >字体$1</font>"
         ]
     }
 }
