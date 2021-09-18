@@ -56,14 +56,14 @@
             "</html>"
         ]
     },
-    "【元素】div块元素": {
+    "【元素】HTML-块标签": {
         "prefix": "e-div-kuai",
         "scope": "html",
         "description": "插入一个div块元素",
         "body": [
-            "        <div id=\"$1\" name='$2' class=\"$3\">\r",
-            "            $4 \r",
-            "        </div>"
+            "<div id=\"$1\" name='$2' class=\"$3\">\r",
+            "    $4 \r",
+            "</div>"
         ]
     },
     "【元素】单选下拉框": {
@@ -189,6 +189,117 @@
         "description": "",
         "body": [
             "<img src=\"http://www.$1\" title=\"鼠标悬浮字体\" alt=\"图片无法显示的内容\" />"
+        ]
+    },
+    "【元素】HTML-空格": {
+        "prefix": "e-kongge-kg-nbsp",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "&nbsp;"
+        ]
+    },
+    "【元素】HTML-版权": {
+        "prefix": "e-banquan-bq-copy",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "&copy;"
+        ]
+    },
+    "【元素】HTML-文字标签": {
+        "prefix": "e-span-wz-wenzi",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<span id=\"\" class=\"\" name=\"\"></span>"
+        ]
+    },
+    "【元素】HTML-输入文本框": {
+        "prefix": "e-wenbenkuang-shuru1-input1-wbk",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入文本框 -->\r",
+            "文本<input type=\"text\" maxlength=\"20\"><br>"
+        ]
+    },
+    "【元素】HTML-输入密码框": {
+        "prefix": "e-mimakuang-shuru2-input2-mmk",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入密码框 -->\r",
+            "密码<input type=\"password\"><br>"
+        ]
+    },
+    "【元素】HTML-输入单选框": {
+        "prefix": "e-danxuankuang-shuru3-input3-dxk",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入单选框 -->\r",
+            "<input type=\"radio\" name=\"sex\" value=\"0\">男\r<br>",
+            "<input type=\"radio\" name=\"sex\" value=\"1\" checked>女<br>"
+        ]
+    },
+    "【元素】HTML-输入多选框": {
+        "prefix": "e-duoxuankuang-shuru4-input4-dxk2",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入复选框 -->\r",
+            "选择复选框<br>",
+            "<input type=\"checkbox\" />足球\r<br>",
+            "<input type=\"checkbox\" />排球\r<br>",
+            "<input type=\"checkbox\" checked />篮球<br>"
+        ]
+    },
+    "【元素】HTML-输入下拉框": {
+        "prefix": "e-xialakuang-shuru5-input5-xlk",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入下拉框 -->\r",
+            "选择下拉框<br>\r",
+            "<select name=\"color\">\r",
+            "    <option value=\"0\">请选择颜色</option>\r",
+            "    <option value=\"1\">选项1</option>\r",
+            "    <option value=\"2\">选项2</option>\r",
+            "    <option value=\"3\">选项3</option>\r",
+            "</select><br>"
+        ]
+    },
+    "【元素】HTML-输入表单": {
+        "prefix": "e-shurubiaodan-shuru-form",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入表单 -->\r",
+            "<form method=\"post\" action=\"\">\r",
+            "   <!-- 表单内容 -->\r",
+            "   $1 \r",
+            "    <input type=\"reset\">\r",
+            "    <input type=\"submit\" name=\"button\" value=\"提交\">\r",
+            "</form>"
+        ]
+    },
+    "【元素】HTML-输入文本域": {
+        "prefix": "e-wenbenyu-shuru6-input6-wby",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入文本域 -->\r",
+            "<textarea name=\"\" cols=\"30\" rows=\"20\"></textarea>"
+        ]
+    },
+    "【元素】HTML-普通按钮": {
+        "prefix": "e-anniu-shuru7-input7",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 普通按钮 -->\r",
+            "<input type=\"button\" value=\"普通按钮\">"
         ]
     }
 }
