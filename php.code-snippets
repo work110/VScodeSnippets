@@ -193,13 +193,73 @@
             "print_r($$stu);"
         ]
     },
-    "": {
-        "prefix": "",
+    "【方法】判断变量是否存在": {
+        "prefix": "f-panduancunzai-isset",
         "scope": "php",
         "description": "",
         "body": [
-            "//【语法】三元运算符\r",
-            "echo $$num%2?'表达式1':'表达式2';"
+            "//【方法】判断变量是否存在\r",
+            "echo isset($$name)?$$name:'不存在';\t\t//不存在则输出不存在"
+        ]
+    },
+    "【方法】判断变量/数组是否为空": {
+        "prefix": "f-panduankong-empty",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【方法】判断变量/数组是否为空\r",
+            "$$name=array();\r",
+            "echo empty($$name)?'空':'非空';\t\t//空"
+        ]
+    },
+    "【语法】if条件-双分支条件判断": {
+        "prefix": "g-ifyuju1",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】if条件-双分支\r",
+            "if($条件){\r",
+            "    //代码块1\r",
+            "\r",
+            "}else{\r",
+            "    //代码块2\r",
+            "    \r",
+            "}"
+        ]
+    },
+    "【语法】if条件-多分支条件判断": {
+        "prefix": "g-ifyuju2",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】if条件-多分支\r",
+            "if($条件){\r",
+            "    //代码块1\r",
+            "    \r",
+            "}elseif($条件2){    //注意：elseif之间没有空格\r",
+            "    \r",
+            "}else{\r",
+            "    \r",
+            "}"
+        ]
+    },
+    "【语法】switch判断": {
+        "prefix": "g-spanduan-switch",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】switch判断\r",
+            "switch($var){\r",
+            "    case $常量1:\r",
+            "        //代码块\r",
+            "\r",
+            "        break;\r",
+            "    case $常量2:\r",
+            "        //代码块\r",
+            "\r",
+            "       default:\r",
+            "        //代码块\r",
+            "}"
         ]
     }
 }
