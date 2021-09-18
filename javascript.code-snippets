@@ -1,0 +1,21 @@
+{
+    "log": {
+        "prefix": "con-shuchu",
+        "scope": "javascript",
+        "description": "【方法】js输出语句",
+        "body": [
+            "console.log($1);"
+        ]
+    },
+    "hanshu": {
+        "prefix": "func-hanshu",
+        "scope": "javascript",
+        "description": "【语法定义】js函数",
+        "body": [
+            "function $1($2){\r",
+            "    $3;",
+            "}\r",
+            ""
+        ]
+    }
+}

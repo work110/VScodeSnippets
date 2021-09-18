@@ -1,0 +1,69 @@
+{
+    "css页内样式，写在head中": {
+        "prefix": "m-css",
+        "scope": "html",
+        "description": "css页内样式，写在head中",
+        "body": [
+            "<!--【行内样式写在head中】-->\r",
+            "    <style>\r",
+            "        /* 全局通配选择器 */\r",
+            "        * {padding: 0px;}\r",
+            "        /* 基本选择器，用于默认标签 */\r",
+            "        p {color: red;}\r",
+            "        /* id选择器，用于div id=‘123’ */\r",
+            "        #123 {color: blue;}\r",
+            "        /* 类选择器，用于选择类class */\r",
+            "        .abc {color: yellow;}\r",
+            "        /* 后代选择器 选择div中的p */\r",
+            "        div>p {color: gray;}\r",
+            "        /* 相邻选择器 选择p和div链接在一起的 */\r",
+            "        p+div {font-weight: bold;}\r",
+            "    </style>"
+        ]
+    },
+    "html开始代码": {
+        "prefix": "kaishi",
+        "scope": "html",
+        "description": "html开始代码",
+        "body": [
+            "<!DOCTYPE html>\r",
+            "<html>\r",
+            "    <head>\r",
+            "        <meta charset=\"utf-8\">\r",
+            "        <title>【标题】</title>\r",
+            "        <script type=\"text/javascript\" src=\"【JS外链】jquery.js\"></script>\r",
+            "        <link type=“text/css” href=“【CSS外链】001.css”>\r",
+            "        <!--【行内样式写在head中】-->\r",
+            "            <style>\r",
+            "                /* 全局通配选择器 */\r",
+            "                * {padding: 0px;}\r",
+            "                /* 基本选择器，用于默认标签 */\r",
+            "                p {color: red;}\r",
+            "                /* id选择器，用于div id=‘123’ */\r",
+            "                #123 {color: blue;}\r",
+            "                /* 类选择器，用于选择类class */\r",
+            "                .abc {color: yellow;}\r",
+            "                /* 后代选择器 选择div中的p */\r",
+            "                div>p {color: gray;}\r",
+            "                /* 相邻选择器 选择p和div链接在一起的 */\r",
+            "                p+div {font-weight: bold;}\r",
+            "            </style>\r",
+            "    </head>\r",
+            "\r",
+            "    <body>\r",
+            "        正文\r",
+            "    </body>\r",
+            "</html>"
+        ]
+    },
+    "div块元素": {
+        "prefix": "div-kuai",
+        "scope": "html",
+        "description": "插入一个div块元素",
+        "body": [
+            "        <div id=\"$1\" name='$2' class=\"$3\">\r",
+            "            $4 \r",
+            "        </div>"
+        ]
+    }
+}

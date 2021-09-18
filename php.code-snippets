@@ -1,0 +1,205 @@
+{
+    /**【】全局通用区
+    * kaishi：开始模板
+    * zhushi：注释模板
+    *
+    */
+
+    "【php开始代码】": {
+        "prefix": "kaishi",
+        "scope": "php",
+        "description": "php开始代码",
+        "body": [
+            "<?php\r",
+            "    echo 'helloworld';\r",
+            "?>"
+        ]
+    },
+    "【php多行注释】": {
+        "prefix": "zhushi",
+        "scope": "php",
+        "description": "php多行注释",
+        "body": [
+            "/**\r",
+            " * [wangyan] $1 \r",
+            " */"
+        ]
+    },
+
+
+    /**【F】常用函数区
+    * shuchu：输出函数
+    * zhushi：注释模板
+    *
+    */
+
+    "【F】php输出": {
+        "prefix": "f-shuchu1-echo",
+        "scope": "php",
+        "description": "php输出",
+        "body": [
+            "echo 'helloworld';"
+        ]
+    },
+    "【F】php输出(带变量)": {
+        "prefix": "f-shuchu1-echo2",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "$$name='tom';\r",
+            "echo \"{$$name}是我的名字\",'<br>';"
+        ]
+    },
+    "【F】php输出数组": {
+        "prefix": "f-shuchu3-print_r",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "print_r($1);"
+        ]
+    },
+    "【F】php输出数据详细信息": {
+        "prefix": "f-shuchu2-var_dump",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "var_dump($1);"
+        ]
+    },
+    "【F】销毁变量": {
+        "prefix": "f-xiaohui-delete",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//销毁变量，delete \r",
+            "unset($1);"
+        ]
+    },
+    "【方法】强制类型转换-int类": {
+        "prefix": "f-zhuanhuanint",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【方法】强制类型转换-int类\r",
+            "(int)$$num1;"
+        ]
+    },
+    "【方法】强制类型转换-str类": {
+        "prefix": "f-zhuanhuanstr",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【方法】强制类型转换-str类\r",
+            "(string)$$num1;"
+        ]
+    },
+    "【方法】强制类型转换-float类": {
+        "prefix": "f-zhuanhuanfloat",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【方法】强制类型转换-float类\r",
+            "(float)$$num1;"
+        ]
+    },
+    "【方法】强制类型转换-bool类": {
+        "prefix": "f-zhuanhuanbool",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【方法】强制类型转换-bool类\r",
+            "(bool)$$num1;"
+        ]
+    },
+
+   /**【G】语法元素区
+    * 
+    * 
+    *
+    */
+
+    "【G】php变量-定义": {
+        "prefix": "g-bianliang-v",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "$$1=$2;"
+        ]
+    },
+    "【G】php常量-定义": {
+        "prefix": "g-changliang-d",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//定义常量\r",
+            "const $NAME='tom';"
+        ]
+    },
+    "【G】php常量-定义2（带对空判断）": {
+        "prefix": "g-changliang-d2",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//如未定义，则新建常量定义\r",
+            "if(!defined('$NAME')){\t\r",
+            "    define('$NAME','tom',false);\t  //【名字/值/区分大小写】\r",
+            "}"
+        ]
+    },
+    "【G】php索引数组-定义": {
+        "prefix": "g-shuzu-array1",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】索引数组\r",
+            "$$arr_name=array('tom','berry','ketty');  //声明\r",
+            "print_r($$arr_name);\t                    //输出 \r",
+            "echo $$arr_name[0],'<br>';\t            //输出元素"
+        ]
+    },
+    "【G】php关联数组-定义": {
+        "prefix": "g-shuzu-array2",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】关联数组\r",
+            "$$arr_name=array('name'=>'李白','sex'=>'男','age'=>22);   //声明\r",
+            "print_r($$arr_name);\t                                    //输出\r",
+            "echo $$arr_name['name'],'<br>';\t                        //输出元素"
+        ]
+    },
+    "【G】php索引数组2（短数组）-定义": {
+        "prefix": "g-shuzu-duanshuzu-array3",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】短数组-索引数组\r",
+            "$$arr_name=['tom','berry','ketty'];   //声明\r",
+            "print_r($$arr_name);                  //输出\r",
+            "echo $$arr_name[0],'<br>';\t          //输出元素"
+        ]
+    },
+    "【G】二维数组-关联数组": {
+        "prefix": "g-shuzu-erweishuzu-array4",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】二维数组-关联数组\r",
+            "$$stu=[\r",
+            "\t['name'=>'tom','sex'=>'男','age'=>22],\r",
+            "\t['name'=>'berry','sex'=>'女','age'=>23]\r",
+            "];\r",
+            "echo '<pre>';\r",
+            "print_r($$stu);"
+        ]
+    },
+    "": {
+        "prefix": "",
+        "scope": "php",
+        "description": "",
+        "body": [
+            "//【语法】三元运算符\r",
+            "echo $$num%2?'表达式1':'表达式2';"
+        ]
+    }
+}
