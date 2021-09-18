@@ -6,8 +6,8 @@
     */
 
     "【php开始代码】": {
-        "prefix": "kaishi",
-        "scope": "php",
+        "prefix": "php-kaishi",
+        "scope": "php,html",
         "description": "php开始代码",
         "body": [
             "<?php\r",
@@ -249,17 +249,35 @@
         "description": "",
         "body": [
             "//【语法】switch判断\r",
-            "switch($var){\r",
-            "    case $常量1:\r",
+            "switch($$var){\r",
+            "    case 1:\r",
             "        //代码块\r",
             "\r",
             "        break;\r",
-            "    case $常量2:\r",
+            "    case 2:\r",
             "        //代码块\r",
             "\r",
             "       default:\r",
             "        //代码块\r",
             "}"
+        ]
+    },
+    "【模板】php页面输入模板判断输出": {
+        "prefix": "php-kaishi2",
+        "scope": "php,html",
+        "description": "",
+        "body": [
+            "<body>\r",
+            "<?php\r",
+            "if(!empty($$_POST)){\t//$_POST不为空说明有post提交的数据\r",
+            "\tvar_dump($$_POST);\r",
+            "}\t\r",
+            "?>\r",
+            "<form method=\"post\" action=\"\">\r",
+            "\t请输入值： <input type=\"text\" name=\"year\"> <br />\r",
+            "\t<input type=\"submit\" name=\"button\" value=\"判断闰年\">\r",
+            "</form>\r",
+            "</body>"
         ]
     }
 }

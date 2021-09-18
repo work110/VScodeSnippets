@@ -1,10 +1,10 @@
 {
-    "css页内样式，写在head中": {
-        "prefix": "m-css",
+    "【模板】css页内样式表，写在head中": {
+        "prefix": "m-cssyenei",
         "scope": "html",
         "description": "css页内样式，写在head中",
         "body": [
-            "<!--【行内样式写在head中】-->\r",
+            "<!--【模板】css页内样式表，写在head中-->\r",
             "    <style>\r",
             "        /* 全局通配选择器 */\r",
             "        * {padding: 0px;}\r",
@@ -21,7 +21,7 @@
             "    </style>"
         ]
     },
-    "html开始代码": {
+    "【html开始代码】": {
         "prefix": "kaishi",
         "scope": "html",
         "description": "html开始代码",
@@ -56,14 +56,31 @@
             "</html>"
         ]
     },
-    "div块元素": {
-        "prefix": "div-kuai",
+    "【元素】div块元素": {
+        "prefix": "e-div-kuai",
         "scope": "html",
         "description": "插入一个div块元素",
         "body": [
             "        <div id=\"$1\" name='$2' class=\"$3\">\r",
             "            $4 \r",
             "        </div>"
+        ]
+    },
+    "【元素】单选下拉框": {
+        "prefix": "e-danxuanxiala-select",
+        "scope": "html",
+        "description": "",
+        "body": [
+            " <!-- 【元素】单选下拉框 -->\r",
+            " <form method=\"post\" action=\"\">\r",
+            "     <select name=\"color\">\r",
+            "         <option value=\"0\">请选择颜色</option>\r",
+            "         <option value=\"1\">选项1</option>\r",
+            "         <option value=\"2\">选项2</option>\r",
+            "         <option value=\"3\">选项3</option>\r",
+            "     </select>\r",
+            "     <input type=\"submit\" name=\"button\" value=\"确定\">\r",
+            " </form>"
         ]
     }
 }
