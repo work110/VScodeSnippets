@@ -1,6 +1,6 @@
 {
     "【模板】css页内样式表，写在head中": {
-        "prefix": "m-cssyenei",
+        "prefix": "m-cssyenei-ysb",
         "scope": "html",
         "description": "css页内样式，写在head中",
         "body": [
@@ -83,7 +83,7 @@
             " </form>"
         ]
     },
-    "【元素】水平线": {
+    "【元素】HTML-水平线": {
         "prefix": "e-shuipingxian-spx-hr",
         "scope": "html",
         "description": "",
@@ -91,7 +91,7 @@
             "<hr width=\"100%\" size=\"3px\" color=\"blue\">"
         ]
     },
-    "【元素】HTML加粗": {
+    "【元素】HTML-加粗": {
         "prefix": "e-jiacu-strong",
         "scope": "html",
         "description": "",
@@ -99,7 +99,7 @@
             "<strong>加粗$1</strong>"
         ]
     },
-    "【元素】HTML加斜": {
+    "【元素】HTML-加斜": {
         "prefix": "e-jiaxie-em",
         "scope": "html",
         "description": "",
@@ -107,7 +107,7 @@
             "<em>加斜$1</em>"
         ]
     },
-    "【元素】HTML下划线": {
+    "【元素】HTML-下划线": {
         "prefix": "e-xiahuaxian-xhx-ins",
         "scope": "html",
         "description": "",
@@ -115,12 +115,80 @@
             "<ins>下划线$1</ins>"
         ]
     },
-    "【元素】HTML字体": {
+    "【元素】HTML-字体": {
         "prefix": "e-ziti-zt-font",
         "scope": "html",
         "description": "",
         "body": [
             "<font size=\"3\" face=\"微软雅黑\" color=\"red\" >字体$1</font>"
+        ]
+    },
+    "【元素】HTML-列表-无序": {
+        "prefix": "e-liebiao1-wxlb-ulli",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 无序列表 -->\r",
+            "<ul >\r",
+            "    <li>喵内卡？</li>\r",
+            "    <li>世界足坛最惨之人出炉!</li>\r",
+            "    <li>卢卡库的\"大笨钟\" </li>\r",
+            "    <li>C罗又美黑!</li>\r",
+            "</ul>"
+        ]
+    },
+    "【元素】HTML-列表-有序": {
+        "prefix": "e-liebiao2-yxlb-olli",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 有序列表 -->\r",
+            "<ol>\r",
+            "    <li>第一项</li>\r",
+            "    <li>第二项</li>\r",
+            "    <li>第三项</li>\r",
+            "</ol>"
+        ]
+    },
+    "【元素】HTML-列表-自定义列表": {
+        "prefix": "e-liebiao3-zdylb-zidingyi-dldtdd",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 自定义列表 -->\r",
+            "<dl>\r",
+            "    <dt>自定义列表一级</dt>\r",
+            "    <dd>内容</dd>\r",
+            "    <dd>内容</dd>\r",
+            "    <dd>内容</dd>\r",
+            "</dl>"
+        ]
+    },
+    "【元素】HTML-链接": {
+        "prefix": "e-ab-href",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<a href=\"http://www.$1\" title=\"鼠标悬浮显示内容\" target=\"_blank\">链接名</a>"
+        ]
+    },
+    "【元素】HTML-锚点链接": {
+        "prefix": "e-maodian",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "    <!-- 锚点 -->\r",
+            "    <a href=\"#$1\">去锚点链接</a>\r",
+            "\r",
+            "    <p id=\"$1\">锚点</p>"
+        ]
+    },
+    "【元素】HTML-图片": {
+        "prefix": "e-tupian-pic-img",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<img src=\"http://www.$1\" title=\"鼠标悬浮字体\" alt=\"图片无法显示的内容\" />"
         ]
     }
 }
