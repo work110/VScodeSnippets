@@ -31,19 +31,8 @@
             "    <head>\r",
             "        <meta charset=\"utf-8\">\r",
             "        <title>【这里是网页标题】</title>\r",
-            "        <script type=\"text/javascript\" src=\"【这里是JS外链】jquery.js\"></script>\r",
-            "        <link type=“text/css” href=“【CSS外链】001.css”>\r",
-            "        <!--【页内css】-->\r",
-            "            <style>\r",
-            "                /* 全局通配选择器 */\r",
-            "                * {padding: 0px;}\r",
-            "                /* 基本选择器，用于默认标签 */\r",
-            "                p {color: red;}\r",
-            "                /* id选择器，用于div id=‘123’ */\r",
-            "                #123 {color: blue;}\r",
-            "                /* 类选择器，用于选择类class */\r",
-            "                .abc {color: yellow;}\r",
-            "            </style>\r",
+            "        <script type=\"text/javascript\" src=\"【外链js】jquery.js\"></script>\r",
+            "        <link rel=\"stylesheet\" href=\"【外链css】test.css\">\r",
             "    </head>\r",
             "\r",
             "    <body>\r",
@@ -165,7 +154,7 @@
         ]
     },
     "【元素】HTML-链接": {
-        "prefix": "e-ab-href",
+        "prefix": "e-ab-link-lianjie-lj-href",
         "scope": "html",
         "description": "",
         "body": [
@@ -444,6 +433,14 @@
             "    雷电黄色预警！<br />\r",
             "    大雨黄色预警！<br />\r",
             "</marquee>"
+        ]
+    },
+    "【元素】HTML-p标签": {
+        "prefix": "p",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<p id=\"\" name='' class=\"\">$1</p>"
         ]
     }
 }
