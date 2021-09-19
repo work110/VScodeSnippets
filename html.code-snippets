@@ -221,7 +221,7 @@
         "description": "",
         "body": [
             "<!-- 输入文本框 -->\r",
-            "文本<input type=\"text\" maxlength=\"20\"><br>"
+            "文本<input type=\"text\" maxlength=\"20\" placeholder=\"请在这里输入\" autofocus=\"autofocus\" required=\"required\"><br>"
         ]
     },
     "【元素】HTML-输入密码框": {
@@ -277,7 +277,6 @@
         "body": [
             "<!-- 输入表单 -->\r",
             "<form method=\"post\" action=\"\">\r",
-            "   <!-- 表单内容 -->\r",
             "   $1 \r",
             "    <input type=\"reset\">\r",
             "    <input type=\"submit\" name=\"button\" value=\"提交\">\r",
@@ -290,7 +289,7 @@
         "description": "",
         "body": [
             "<!-- 输入文本域 -->\r",
-            "<textarea name=\"\" cols=\"30\" rows=\"20\"></textarea>"
+            "<textarea name=\"\" cols=\"30\" rows=\"20\" placeholder=\"电子邮件地址\" autofocus=\"autofocus\" required=\"required\"></textarea>"
         ]
     },
     "【元素】HTML-普通按钮": {
@@ -300,6 +299,151 @@
         "body": [
             "<!-- 普通按钮 -->\r",
             "<input type=\"button\" value=\"普通按钮\">"
+        ]
+    },
+    "【元素】页面框架1：上中下三段式": {
+        "prefix": "e-kuangjia1-frameset",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 页面框架1：上中下三段式 【删除body】-->\r",
+            "<frameset rows=\"50,*,100\" frameborder=\"0\">\r",
+            "    <frame src=\"t/1.html\" name=\"top\" ></frame>\r",
+            "    <frame src=\"t/1.html\" name=\"main\" ></frame>\r",
+            "    <frame src=\"t/1.html\" name=\"bottom\" ></frame>\r",
+            "</frameset>\r",
+            "\r",
+            "<!-- 在框架内页面设置指定跳转链接 <a href=\"t/2.html\"  target=\"main\">跳转</a> -->"
+        ]
+    },
+    "【元素】页面框架2：左中右": {
+        "prefix": "e-kuangjia2-frameset",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "    <!-- 页面框架2：左中右 【删除body】-->\r",
+            "    <frameset cols=\"50,*,100\" frameborder=\"0\">\r",
+            "        <frame src=\"t/1.html\" name=\"left\" ></frame>\r",
+            "        <frame src=\"t/1.html\" name=\"middle\" ></frame>\r",
+            "        <frame src=\"t/1.html\" name=\"right\" ></frame>\r",
+            "    </frameset>\r",
+            "\r",
+            "    <!-- 在框架内页面设置指定跳转链接 <a href=\"t/2.html\"  target=\"main\">跳转</a> -->"
+        ]
+    },
+    "【元素】页面框架3：后台式": {
+        "prefix": "e-kuangjia3-frameset",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 页面框架3：后台式 【删除body】-->\r",
+            "<!-- 顶部页面 -->\r",
+            "<frameset rows=\"100,*\" frameborder=\"0\">\r",
+            "    <frame src=\"t/1.html\" name=\"top\"></frame>\r",
+            "    <!-- 下部左右页面 -->\r",
+            "    <frameset cols=\"100,*\" frameborder=\"1\">\r",
+            "        <frame src=\"t/1.html\" name=\"left\"></frame>\r",
+            "        <frame src=\"t/1.html\" name=\"right\"></frame>\r",
+            "    </frameset>\r",
+            "</frameset>\r",
+            "\r",
+            "<!-- 在框架内页面设置指定跳转链接 <a href=\"t/2.html\"  target=\"main\">跳转</a> -->"
+        ]
+    },
+    "【元素】内嵌式页面框架": {
+        "prefix": "e-neiqian-iframe",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 内嵌框架 -->\r",
+            "<iframe src=\"https://www.163.com\" width=\"500\" height=\"200\" marginwidth=\"0\" marginheight=\"0\" frameborder=\"0\"></iframe>"
+        ]
+    },
+    "【元素】HTML-输入邮箱": {
+        "prefix": "e-youxiang-shuru8-input8-email",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入邮箱地址 -->\r",
+            "email:<input type=\"email\" placeholder=\"电子邮件地址\" autofocus=\"autofocus\" required=\"required\"><br>"
+        ]
+    },
+    "【元素】HTML-输入日期": {
+        "prefix": "e-riqi-shuru9-input9-data",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入日期 -->\r",
+            "日期：<input type=\"date\" required=\"required\"><br>"
+        ]
+    },
+    "【元素】HTML-输入其他": {
+        "prefix": "e-qita-shuru10-input10",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 输入颜色 -->\r",
+            "颜色：<input type=\"color\" required=\"required\"><br>\r",
+            "\r",
+            "<!-- 输入滑块 -->\r",
+            "进度条：<input type=\"range\" required=\"required\"><br>\r",
+            "\r",
+            "<!-- 输入数字 -->\r",
+            "数字：<input type=\"number\" required=\"required\"><br>"
+        ]
+    },
+    "【元素】HTML-多媒体": {
+        "prefix": "e-duomeiti-media-embed",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 多媒体（Midi、Wav、flac、AIFF、AU、MP3、MP4）-->\r",
+            "<embed src=\"邓紫棋-喜欢你.mp3\" autostart=true/false  hidden=true/no  loop=正整数/true/false></embed>"
+        ]
+    },
+    "【元素】HTML-音乐播放器": {
+        "prefix": "e-yinyue-music-audio",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 音乐 （MP3、OGG、WAV） -->\r",
+            "<audio src=\"邓紫棋-喜欢你.mp3\" controls autoplay=\"autoplay\" loop=\"loop\"></audio>"
+        ]
+    },
+    "【元素】HTML-多个音乐播放": {
+        "prefix": "e-yinyue2-music2-audio",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 音乐：多个播放 （MP3、OGG、WAV） -->\r",
+            "<audio controls autoplay loop=\"loop\">\r",
+            "    <source src=\"music/music.mp3\">\r",
+            "    <source src=\"music/music.ogg\">\r",
+            "</audio>"
+        ]
+    },
+    "【元素】HTML-视频播放器": {
+        "prefix": "e-shipin-video",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 视频：多个播放 （MP3、OGG、WAV） -->\r",
+            "<video controls autoplay loop>\r",
+            "    <source src=\"邓紫棋_喜欢你.mkv\">\r",
+            "    <source src=\"邓紫棋_喜欢你.webm\">\r",
+            "</video>"
+        ]
+    },
+    "【元素】HTML-走马灯滚动字": {
+        "prefix": "e-zoumadeng-gundong-marquee",
+        "scope": "html",
+        "description": "",
+        "body": [
+            "<!-- 滚动字体-->\r",
+            "<marquee behavior=\"scroll\" direction=\"up\" height=\"30\" style=\"overflow:hidden;\" scrollamount=\"1\" width=\"300\" onMouseOver=\"stop()\" onMouseOut=\"start()\">\r",
+            "    雷电黄色预警！<br />\r",
+            "    大雨黄色预警！<br />\r",
+            "</marquee>"
         ]
     }
 }
