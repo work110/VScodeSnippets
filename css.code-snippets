@@ -390,6 +390,7 @@
             "}\r",
             ""
         ]
+<<<<<<< HEAD
     },
     "css-div中文字超出自动换行": {
         "prefix": "huanhang",
@@ -420,5 +421,7 @@
             "    margin: 0 auto;\r",
             "}"
         ]
+=======
+>>>>>>> bf2c3beb7b2004faab0cdc55e3842b60fc83192e
     }
 }
