@@ -390,5 +390,38 @@
             "}\r",
             ""
         ]
+<<<<<<< HEAD
+    },
+    "css-div中文字超出自动换行": {
+        "prefix": "huanhang",
+        "scope": "css",
+        "description": "",
+        "body": [
+            "    white-space: normal;\r",
+            "    word-break: break-all;"
+        ]
+    },
+    "css-commont通用文件": {
+        "prefix": "css-kaishi-common",
+        "scope": "css",
+        "description": "",
+        "body": [
+            "*{\r",
+            "    margin: 0;\r",
+            "    padding: 0;\r",
+            "    border:none;\r",
+            "}\r",
+            "\r",
+            ".warp{\r",
+            "    width: 100%;\r",
+            "}\r",
+            "\r",
+            ".content{\r",
+            "    /* width: 970px; */\r",
+            "    margin: 0 auto;\r",
+            "}"
+        ]
+=======
+>>>>>>> bf2c3beb7b2004faab0cdc55e3842b60fc83192e
     }
 }

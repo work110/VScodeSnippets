@@ -426,7 +426,7 @@
         "description": "",
         "body": [
             "<!-- 视频：多个播放 （MP3、OGG、WAV） -->\r",
-            "<video controls autoplay loop>\r",
+            "<video controls autoplay=\"\" loop=\"\" muted=\"\">\r",
             "    <source src=\"邓紫棋_喜欢你.mkv\">\r",
             "    <source src=\"邓紫棋_喜欢你.webm\">\r",
             "</video>"
